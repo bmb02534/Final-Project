@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Product Management System</title>
+    </head>
+    <body>
+        <h1>Product Management System</h1>
+
+        {% block content %}
+
+        <h3>Please Select</h3>
+        <a href="{{url_for('home')}}">Product Data Entry</a><br>
+        <a href="{{url_for('renderTable')}}">Retrieve Data From Database</a><br><br><br>
+
+        <form action="/data" method="post">
+        Product Category: <input name="category",type="text"/><br>
+        Product Description: <input name="description",type="text"/><br>
+        Price: <input name="price",type="text"/><br>
+        Product Code: <input name="code",tpye="text"/><br>
+        <input type="submit"/><br>
+        </form>
+
+        {% endblock content %}
+
+    </body>
+</html>

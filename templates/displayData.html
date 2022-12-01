@@ -1,0 +1,11 @@
+{% extends 'homepage.html' %}
+
+{% block content %}
+
+<h2>Data:</h2>
+
+{{df.to_html(classes="table table-striped") | safe}}
+<form action="/" method="post">
+    <input type="submit" value="OK"/>
+</form>
+{% endblock content %}

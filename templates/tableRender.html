@@ -1,0 +1,11 @@
+{% extends 'homepage.html' %}
+
+{% block content %}
+
+<h2>Product Retrieval</h2>
+
+<form action="/tableDisplay" method="post">
+    Select category to retrieve from database: <input name="cat2",placeholder="leave blank to print all",type="text"/><br>
+    <input type="submit"/><br>
+    </form>
+{% endblock content %}
